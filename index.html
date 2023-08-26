@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="nav-style.css">
-    <link rel="stylesheet" href="header-style.css">
-    <link rel="stylesheet" href="events2-style.css">
-    <link rel="stylesheet" href="events-style.css">
-    <link rel="stylesheet" href="gallery-style.css">
+    <link rel="stylesheet" href="banner-style.css">
     <link rel="stylesheet" href="showcase-style.css">
+    <link rel="stylesheet" href="gallery-style.css">
+    <link rel="stylesheet" href="baa-style.css">
+    <link rel="stylesheet" href="footer-style.css">
 </head>
 <body>
     <header>
-    <nav>
+    <nav class="window-scrolled">
         <div class="navbar">
             <div class="logo"><a href="#"><img src="./assets/logo.png" alt="Nav Logo"></a></div>
             <ul class="links">
-                <li><a href="#">Home<span></span></a></li>
+                <!-- <li><a href="#">Home<span></span></a></li>
                 <li><a href="#gallery">Gallery<span></span></a></li>
                 <li><a href="#events">Events<span></span></a></li>
-                <li><a href="#contact">Contact<span></span></a></li>
+                <li><a href="#contact">Contact<span></span></a></li> -->
             </ul>
-            <a href="#" class="action_btn">Instagram.</a>
+            <a href="https://www.instagram.com/lumiere.iiserm" class="action_btn">Instagram.</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -37,251 +37,118 @@
             <li><a href="#gallery">Gallery<span></span></a></li>
             <li><a href="#events">Events<span></span></a></li>
             <li><a href="#contact">Contact<span></span></a></li>
-            <!-- <li><a href="#" class="action_btn">Get Started</a></li> -->
         </div>
     </nav>
 
+    <div class="banner">
         <div class="big-title" data-speed="0.1">
             <p>
                 <span class="word w3">Enjoy Photography.</span>
                 <span class="word w1">Pick Frame.</span>
-                <span class="word w2">Click Shutter .</span>
+                <span class="word w2">Click Shutter.</span>
             </p>
         </div>
-
+        
         <img src="./assets/person.png" class="person translate" data-speed="-0.25">
-        <img src="./assets/mountain1.png" class="mountain1 translate"data-speed="-0.2">
-        <img src="./assets/mountain2.png" class="mountain2 translate"data-speed="0.3">
-        <img src="./assets/mountain3.png" class="mountain3 translate"data-speed="0.4">
+        <img src="./assets/mountain1.png" class="mountain1 translate" data-speed="-0.2">
+        <img src="./assets/mountain2.png" class="mountain2 translate" data-speed="0.3">
+        <img src="./assets/mountain3.png" class="mountain3 translate" data-speed="0.4">
         <img src="./assets/sky.png" class="sky translate" data-speed="0.5">
+    </div>
+
     </header>
 
     <section id="gallery">
 
-        <div class="shadow"></div>
+        <!-- <div class="shadow"></div> -->
 
         <div class="description">
             <div class="logo">Selected Clicks</div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi optio explicabo modi.
-                Quasi molestiae excepturi itaque suscipit, neque, asperiores, reiciendis molestias laudantium 
-                cum expedita veritatis odio explicabo totam! Rem, distinctio.</p>
+            <p>
+                Here are some of your captures submitted to Lumière.
+            </p>
         </div>
 
-        <div class="swiper slider slider_main">
-            <div class="swiper-wrapper slider_wrapper">
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery1.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery2.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery3.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery4.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery5.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery6.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery7.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery8.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery9.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery10.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <img src="./assets/gallery11.jpg" data-swiper-parallax="20%" class="slider_img">
-                <div class="name">Ratnojit Bhattacherjee</div>
-                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.</div>
-              </div>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Spatika_Jayaram.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Spatika Jayaram</div>
+                    <div class="caption"></div>
+                </div>
             </div>
-          </div>
-        
-          <div class="swiper-container slider slider_bg">
-            <div class="swiper-wrapper slider_wrapper">
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery1.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery2.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery3.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery4.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery5.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery6.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery7.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery8.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery9.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery10.jpg)"></div>
-              </div>
-              <div class="swiper-slide slide_item">
-                <div class="slider_img" data-swiper-parallax="20%" style="background-image: url(./assets/gallery11.jpg)"></div>
-              </div>
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Sarvesh.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Sarvesh</div>
+                    <div class="caption"></div>
+                </div>
             </div>
-          </div>
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Prajakta_Mane.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Prajakta Mane</div>
+                    <div class="caption"></div>
+                </div>
+            </div>
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Siddhant_Sahoo.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Siddhant_Sahoo</div>
+                    <div class="caption"></div>
+                </div>
+            </div>
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Nirmal.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Nirmal</div>
+                    <div class="caption"></div>
+                </div>
+            </div>
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Siddhant.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Siddhant</div>
+                    <div class="caption"></div>
+                </div>
+            </div>
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Kartik.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Kartik</div>
+                    <div class="caption"></div>
+                </div>
+            </div>
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Hiral_Gandhi.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Hiral Gandhi</div>
+                    <div class="caption"></div>
+                </div>
+            </div>
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Aryan_Dhansyan.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Aryan Dhansyan</div>
+                    <div class="caption"></div>
+                </div>
+            </div>
+            <div class="image-track-item">
+                <img class="image-parallax" src="./assets/sc_Amish.jpg" draggable="false" />
+                <div class="image-description">
+                    <div class="name">Amish</div>
+                    <div class="caption"></div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-    <div id="showcase" class="main-wrapper">
-      <div class="swiper slider slider1">
-        <div class="swiper-wrapper slider_wrapper">
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery1.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery2.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery3.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery4.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery5.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery6.jpg);"></div>
-            </div>
-        </div>
+    <div class="footer">
+        Site under construction ⚠️
     </div>
 
-    <div class="swiper slider slider2">
-        <div class="swiper-wrapper slider_wrapper">
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery1.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery2.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery3.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery4.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery5.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery6.jpg);"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="swiper slider slider3">
-        <div class="swiper-wrapper slider_wrapper">
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery1.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery2.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery3.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery4.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery5.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery6.jpg);"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="swiper slider slider4">
-        <div class="swiper-wrapper slider_wrapper">
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery1.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery2.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery3.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery4.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery5.jpg);"></div>
-            </div>
-            <div class="swiper-slide slider_item">
-                <div class="slider_img" style="background-image: url(./assets/gallery6.jpg);"></div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <section id="events">
-
-        <!-- <div class="shadow"></div> -->
-
-        <div class="container">
-            <div class="content opacity">
-                <h3 class="title">
-                    Be An Artist !
-                    <div class="border"></div>
-                </h3>
-                <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat reiciendis quasi facilis molestias voluptatem unde dolor quia pariatur minima sed eaque nobis, blanditiis exercitationem ab illum nostrum vero porro distinctio dolorem. Laboriosam molestiae vel nobis blanditiis quis dolores hic perspiciatis veniam natus fuga!
-                </p>
-            </div>
-            <div class="imgContainer opacity">
-                <img src="./assets/image.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 </html>

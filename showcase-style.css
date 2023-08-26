@@ -1,57 +1,176 @@
-#showcase{
-    height: 100%;
+#gallery {
+    /* height: 100vh; */
+    height: 1000px;
+    width: 100vw;
+    background-color: black;
+    margin: 0rem;
     overflow: hidden;
+    position: relative;
 }
 
-:root{
-    --index: calc(1vw + 1vh);
-    --transition: 1.25s cubic-bezier(.2, .6, 0, 1);
-}
-
-.main-wrapper{
-    height: 100%;
+#image-track {
     display: flex;
-    gap: var(--index);
-    background: #151515;
-    background-size: cover;
-    background-position: center;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    user-select: none;
+    /* -- Prevent image highlighting -- */
 }
 
-.main-wrapper .slider{
-    /* transform: rotate(12.5deg); */
-    overflow: visible;
+.description {
+    position: relative;
+    font-size: calc((1vh + 1vw) * .8);
+    top: 50%;
+    max-width: 30vw;
+    transition: transform ease .75s, opacity ease .75s;
+    will-change: left;
 }
 
-.main-wrapper .slider:nth-child(odd){
-    /* transform: rotate(192.5deg); */
-    transform: rotate(180deg) translateY(-20vh);
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    display: inline-block;
+    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.main-wrapper .slider .slider_wrapper{
-    transition: var(--transition)!important;
-    will-change: transform;
+.description p {
+    font-size: 0.8em;
+    opacity: .9;
+    transition: ease .75s;
+    /* transition-duration: 3s; */
+    color: white;
 }
 
-.main-wrapper .slider_item{
-    width: 21vw;
-    margin-bottom: calc(var(--index) * 2.6);
-    cursor: pointer;
-    transition: var(--transition);
-    box-shadow: rgb(0 0 0 / .15) 0 0 30px 10px;
-    border-radius: 8px;
+.description.hidden {
+    opacity: 0;
+    transform: translateY(5vh);
 }
 
-.main-wrapper .slider_item:hover{
-    transform: scale(1.05);
+.description.hidden p {
+    opacity: 0;
+    transform: translateY(3vh);
 }
 
-.main-wrapper .slider_img{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    border-radius: 8px;
+.image-parallax {
+    width: inherit;
+    object-fit: cover;
+    object-position: 100% center;
+    transition: 0.8s;
 }
 
-.main-wrapper .slider:nth-child(odd) .slider_img{
-    transform: rotate(-180deg);
+.image-track-item.open .image-parallax {
+    filter: blur(10px);
+    transition: 0.8s;
+}
+
+/* .image-track-item .image-description {
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    width: inherit;
+    text-align: center;
+    transition: .5s ease;
+} */
+
+/* .image-track-item.open .image-description {
+    opacity: 0.8;
+    top: 40%;
+    transition: .5s ease-in-out;
+} */
+
+.image-track-item .image-description {
+    width: inherit;
+}
+
+.image-track-item .name {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    opacity: 0;
+    top: 10%;
+    width: inherit;
+    text-align: center;
+    /* text-sha dow: 5px 5px 10px #151515; */
+    transition: .5s;
+}
+
+.image-track-item .caption {
+    color: white;
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0;
+    top: 30%;
+    width: inherit;
+    text-align: center;
+    position: absolute;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 7px #151515;
+    transition: .5s;
+}
+
+.image-track-item.open .name {
+    opacity: 0.8;
+    top: 40%;
+    transition: .5s;
+}
+
+.image-track-item.open .caption {
+    opacity: 0.8;
+    top: 50%;
+    transition: .5s;
+}
+
+/* .image-track-item.open .image-description {
+    opacity: 0.8;
+    top: 40%;
+    transition: .5s ease-in-out;
+} */
+
+@media (min-width: 700px) {
+    /* .description {
+        left: 12vw;
+    } */
+
+    .image-track-item {
+        width: 40vmin;
+    }
+
+    .image-parallax {
+        height: 56vmin;
+    }
+
+    .description p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .description {
+        top: 20vh;
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .description p {
+        font-size: 1.2em;
+    }
+
+    #image-track {
+        top: 60%;
+        left: 10%;
+    }
+
+    .image-track-item {
+         width: 60vmin;
+    }
+
+    .image-parallax {
+        height: 50vh;
+    }
 }
