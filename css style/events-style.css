@@ -11,7 +11,7 @@
 
 .swiper-btn{
     color: orange;
-    opacity: 0.1;
+    opacity: 0.35;
     transition: 500ms cubic-bezier(.13,.53,.38,.97);
 }
 .swiper-btn:hover{
@@ -176,7 +176,7 @@
 }
 
 @media screen and (max-width: 1200px){
-    .main-container-btn-md{
+    /* .main-container-btn-md{
         background-color: red;
         color: yellow;
         margin-top: 2rem;
@@ -188,7 +188,7 @@
 
     .main-container-btn-md:hover{
         color: orange;
-    }
+    } */
 
     #events .main-container-left img{
         width: 100%;

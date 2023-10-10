@@ -116,6 +116,22 @@
     transition: .5s;
 }
 
+.description .main-container-btn-md{
+    position: absolute;
+    display: block inline-block;
+    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    border-radius: 0.3rem;
+    transition: 500ms cubic-bezier(.13,.53,.38,.97);
+    text-decoration: none;
+}
+
+.description .main-container-btn-md:hover{
+    transform: scale(1.05);
+}
+
 /* .image-track-item.open .image-description {
     opacity: 0.8;
     top: 40%;
@@ -124,8 +140,8 @@
 
 @media (max-width: 850px) {
     .description {
-        top: 15%;
-        max-width: 80vw;
+        top: 12%;
+        max-width: 100%;
     }
 
     .description .logo{
@@ -137,7 +153,7 @@
     }
 
     #image-track {
-        top: 30%;
+        top: 35%;
         left: 5%;
     }
 
@@ -147,5 +163,19 @@
 
     .image-parallax {
         height: 60dvh;
+    }
+
+    .description .main-container-btn-md{
+        position: absolute;
+        display: block inline-block;
+        background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
+        bottom: -100%;
+        left: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+        border-radius: 0.3rem;
+        transition: 500ms cubic-bezier(.13,.53,.38,.97);
+        text-decoration: none;
     }
 }

@@ -1,5 +1,5 @@
 const sliderMain = new Swiper(".slider-events", {
-    freeMode: true,
+    // freeMode: true,
     centeredSlides: true,
     // mousewheel: true,
     cssmode: true,
@@ -9,10 +9,10 @@ const sliderMain = new Swiper(".slider-events", {
     // autoplay: {
     //     delay: 5000,
     // },
-    // navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     pagination: {
         el: ".swiper-pagination",
         type: "progressbar"

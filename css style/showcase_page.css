@@ -1,0 +1,106 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.parent-container{
+    width: 92.5%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.parent-container::-webkit-scrollbar{
+    display: none;
+}
+
+.parent-container .showcase-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.parent-container .showcase-container .portrait {
+    height: 100%;
+    object-fit: contain;
+}
+
+.parent-container .showcase-container .landscape {
+    width: 100%;
+    object-fit: contain;
+}
+
+.navigation {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    width: 7.5%;
+}
+
+.navigation .parent-container{
+    width: fit-content;
+}
+
+.navigation .parent-container .showcase-container {
+    padding: 2px;
+    cursor: pointer;
+}
+
+.navigation .parent-container .showcase-container img {
+    image-resolution: 100dpi;
+    width: 100%;
+    object-fit: contain;
+    transition: 400ms cubic-bezier(.13,.53,.38,.97);
+}
+
+.reveal-button{
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: orange;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 10;
+    border-radius: 4.5rem;
+    border: none;
+    outline: none;
+    /* color: rgb(182, 142, 113); */
+    cursor: pointer;
+    box-shadow: 0rem 1rem 1.5rem rgba(0 0 0 / 35%);
+    transition: 500ms cubic-bezier(.13,.53,.38,.97);
+}
+
+.reveal-button:hover{
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 4.7rem;
+    /* left: calc(50% - 2.35rem); */
+}
+
+.reveal-button .uit {
+    justify-content: center;
+    font-size: 2rem;
+    color: black;
+    position: relative;
+    opacity: 1;
+    transition: 500ms cubic-bezier(.13,.53,.38,.97);
+}
+
+.reveal-button:hover .uit{
+    opacity: 1;
+    font-size: 3rem;
+}

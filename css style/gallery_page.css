@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: antiquewhite;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-page-left{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    gap: clamp(1rem, 2%, 1.5rem);
+}
+
+.gallery-page-columns{
+    position: relative;
+    width: 25%;
+    height: fit-content;
+    top: 0;
+    /* background-color: red; */
+    display: grid;
+    row-gap: 1.5rem;
+    /* overflow: hidden; */
+}
+
+.gallery-page-columns .img-container {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    height: fit-content;
+    /* background-color: aqua; */
+    overflow: hidden;
+}
+
+.gallery-page-columns .img-container .title{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    color: white;
+}
+
+.gallery-page-columns .img-container img{
+    width: 100%;
+    height: 100%;
+    scale: 1.1;
+    cursor: pointer;
+    transition: 400ms cubic-bezier(.13,.53,.38,.97);
+}
+
+.gallery-page-columns .img-container img:hover{
+    scale: 1;
+}
+
+@media(max-width: 1050px){
+    
+}
